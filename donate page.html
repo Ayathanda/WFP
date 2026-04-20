@@ -1,0 +1,492 @@
+<!DOCTYPE html> 
+
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Donate</title> 
+
+    <style> 
+
+
+        body { 
+
+            margin: 0; 
+
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+
+            background-color: #001f3f; 
+
+            color: #ffffff; 
+
+            line-height: 1.6; 
+
+        } 
+
+
+
+        header { 
+
+            background-color: #add8e6; 
+
+            color: #001f3f; 
+
+            padding: 50px 20px; 
+
+            text-align: center; 
+
+        } 
+
+ 
+
+        header h1 { 
+
+            margin: 0; 
+
+            font-size: 2.5rem; 
+
+            text-transform: uppercase; 
+
+        } 
+
+ 
+
+        .main-container { 
+
+            max-width: 1100px; 
+
+            margin: 50px auto; 
+
+            padding: 0 20px; 
+
+            display: grid; 
+
+            grid-template-columns: 1fr 1fr; 
+
+            gap: 50px; 
+
+            align-items: start; 
+
+        }
+
+        @media (max-width: 850px) { 
+
+            .main-container { 
+
+                grid-template-columns: 1fr; 
+
+            } 
+
+        } 
+
+ 
+
+        .impact-content h2 { 
+
+            color: #add8e6; 
+
+            font-size: 2rem; 
+
+            margin-top: 0; 
+
+        } 
+
+ 
+
+        .impact-list { 
+
+            list-style: none; 
+
+            padding: 0; 
+
+        } 
+
+ 
+
+        .impact-item { 
+
+            background: rgba(173, 216, 230, 0.1); 
+
+            margin-bottom: 15px; 
+
+            padding: 20px; 
+
+            border-left: 4px solid #add8e6; 
+
+            border-radius: 0 10px 10px 0; 
+
+        } 
+
+ 
+
+        .impact-item strong { 
+
+            display: block; 
+
+            color: #add8e6; 
+
+            margin-bottom: 5px; 
+
+        } 
+
+ 
+
+
+
+        .donation-card { 
+
+            background-color: rgba(255, 255, 255, 0.05); 
+
+            padding: 40px; 
+
+            border-radius: 20px; 
+
+            border: 1px solid #add8e6; 
+
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+
+        } 
+
+ 
+
+        .form-group { 
+
+            margin-bottom: 20px; 
+
+        } 
+
+ 
+
+        label { 
+
+            display: block; 
+
+            margin-bottom: 8px; 
+
+            color: #add8e6; 
+
+            font-weight: bold; 
+
+        } 
+
+ 
+
+        input[type="text"], 
+
+        input[type="email"], 
+
+        input[type="number"], 
+
+        select { 
+
+            width: 100%; 
+
+            padding: 12px; 
+
+            background: #002b56; 
+
+            border: 1px solid #444; 
+
+            border-radius: 8px; 
+
+            color: white; 
+
+            font-size: 1rem; 
+
+            box-sizing: border-box; 
+
+        } 
+
+ 
+
+        input:focus { 
+
+            outline: none; 
+
+            border-color: #add8e6; 
+
+            box-shadow: 0 0 10px rgba(173, 216, 230, 0.3); 
+
+        } 
+
+
+
+        .amount-grid { 
+
+            display: grid; 
+
+            grid-template-columns: repeat(3, 1fr); 
+
+            gap: 10px; 
+
+            margin-bottom: 20px; 
+
+        } 
+
+ 
+
+        .amount-option { 
+
+            background: transparent; 
+
+            border: 1px solid #add8e6; 
+
+            color: #add8e6; 
+
+            padding: 10px; 
+
+            text-align: center; 
+
+            border-radius: 8px; 
+
+            cursor: pointer; 
+
+            font-weight: bold; 
+
+            transition: 0.3s; 
+
+        } 
+
+ 
+
+        .amount-option:hover { 
+
+            background: #add8e6; 
+
+            color: #001f3f; 
+
+        } 
+
+        .donate-btn { 
+
+            width: 100%; 
+
+            background-color: #add8e6; 
+
+            color: #001f3f; 
+
+            padding: 15px; 
+
+            border: none; 
+
+            border-radius: 8px; 
+
+            font-size: 1.2rem; 
+
+            font-weight: bold; 
+
+            cursor: pointer; 
+
+            transition: all 0.3s ease; 
+
+        } 
+
+ 
+
+        .donate-btn:hover { 
+
+            background-color: #ffffff; 
+
+            transform: translateY(-3px); 
+
+            box-shadow: 0 5px 15px rgba(255,255,255,0.2); 
+
+        } 
+
+ 
+
+        footer { 
+
+            text-align: center; 
+
+            padding: 40px; 
+
+            font-size: 0.9rem; 
+
+            color: #add8e6; 
+
+            opacity: 0.7; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+<body> 
+
+ 
+
+    <header> 
+     <nav> 
+
+         <h1>WELCOME TO THE WORLD FOOD PROGRAMME</h1>
+                <img src="c:\Users\Student\Desktop\World Food Programme\images\wfp logo.jpg" style="width: 50px; height: 65px; float: left;">
+                  <nav>
+                    <div class="header--top"></div>
+                    <div class="header--misc">
+                        <div class="header--search">
+                            <input type="search" class="header--input"placeholder="search" style="float: right;">
+                        </div>
+                            <a href="home page wfp.html">HOME|</a>
+                            <a href="about us page.html">ABOUT US|</a>
+                            <a href="services page.html"> SERVICES|</a>
+                            <a href="enquiry page.html">ENQUIRY|</a>
+                            <a href="contact us page.html">CONTACT US| </a>
+                            <a href="support us.html"> SUPPORT US|</a>
+                            <a href="donate page.html">DONATE|</a>
+                    </ol>
+                    </div>
+        </ul> 
+
+    </nav> 
+
+        <h1>Make a Difference</h1> 
+
+    </header> 
+
+ 
+
+    <div class="main-container"> 
+
+         
+
+        <div class="impact-content"> 
+
+            <h2>Why Your Gift Matters</h2> 
+
+            <p>Every donation, regardless of size, adds to our ability to innovate and provide free resources to the global community. Here is how your support translates into action:</p> 
+
+             
+
+            <ul class="impact-list"> 
+
+                <li class="impact-item"> 
+
+                    <strong>Direct Operational Costs (93%)</strong> 
+                  This covers the transfer of aid including the actual cost of food commodities,
+                  ocean freight, warehousing and the last-mile trucking required to reach beneficiaries. 
+                  It also funds implementation activities like beneficiary registration and monitoring.
+                    
+
+                </li> 
+
+                <li class="impact-item"> 
+
+                    <strong>Cash Assistance</strong> 
+
+                    Roughly 35% of recent expenditures have shifted toward cash and vouchers which empowers local 
+                    economies and gives families more choice in their nutrition. 
+
+                </li> 
+
+                <li class="impact-item"> 
+
+                    <strong>Resilience and Development</strong> 
+
+            Beyond immediate famine relief, funds are used for food for assets programs were communities receive
+            assistance in exchange for working on local infrastructure like irrigaton systems or roads.
+
+                </li> 
+
+            </ul> 
+
+        </div> 
+
+ 
+
+        <div class="donation-card"> 
+
+            <form action="#"> 
+
+                <div class="form-group"> 
+
+                    <label>Select Amount</label> 
+
+                    <div class="amount-grid"> 
+
+                        <div class="amount-option">R100</div> 
+
+                        <div class="amount-option">R2500</div> 
+
+                        <div class="amount-option">R500</div> 
+
+                    </div> 
+
+                    <input type="number" placeholder="Custom Amount (ZAR)" min="1"> 
+
+                </div> 
+
+ 
+
+                <div class="form-group"> 
+
+                    <label for="name">Full Name</label> 
+
+                    <input type="text" id="name" placeholder="John Doe" required> 
+
+                </div> 
+
+ 
+
+                <div class="form-group"> 
+
+                    <label for="email">Email Address</label> 
+
+                    <input type="email" id="email" placeholder="john@example.com" required> 
+
+                </div> 
+
+ 
+
+                <div class="form-group"> 
+
+                    <label for="payment">Payment Method</label> 
+
+                    <select id="payment"> 
+
+                        <option>Credit Card</option> 
+
+                        <option>PayPal</option> 
+
+                        <option>Bank Transfer</option> 
+
+                    </select> 
+
+                </div> 
+
+ 
+
+                <button type="submit" class="donate-btn">Complete Donation</button> 
+
+                 
+
+                <p style="font-size: 0.8rem; text-align: center; margin-top: 15px; opacity: 0.6;"> 
+
+                </p> 
+
+            </form> 
+
+        </div> 
+
+ 
+
+    </div> 
+
+ 
+
+    <footer> 
+
+        &copy;ST10521296
+
+    </footer> 
+
+ 
+
+</body> 
+
+</html> 

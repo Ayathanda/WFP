@@ -1,0 +1,193 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport"
+        content="width=device=wdth, initial-scale=1.0">
+        <title>Contact us page</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #001f3f;
+                color: #"ffffff";
+                line-height:1.6;
+            }
+             header{
+                background-color: #add8e6;
+                color: #001f3f;
+                padding: 3rem 1rem;
+                text-align: center;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0,3);
+            }
+            .container{
+                max-width: 1000px;
+                margin: 50px auto;
+                padding: 0 20px;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 40px;
+            }
+            @media(max-width:768px){
+             .container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-info{
+            background-color: rgba(173, 216, 230, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #add8e6;
+        }
+        .contact-info h2{
+           color: #add8e6;
+           margin-top: 0;
+        }
+        .info-item{
+            margin-bottom: 20px;
+        }
+        .info-item strong{
+            display: block;
+            color: #add8e6;
+            font-size: 0.9 rem;
+            text-transform: uppercase;
+        }
+        .contact-form{
+            background-color: rgba(255, 255,255,0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #add8e6;
+        }
+        .form-group{
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+            color: #add8e6;
+        }
+        input, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid#444;
+            background-color: #002b56;
+            color: white;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        input:focus, textarea:focus{
+           outline: none;
+           border-color: #add8e6;
+           box-shadow: 0 0 8px rgba(173, 216, 230, 0.5);
+
+        }
+        .submit-btn{
+            background-color: #add8e6;
+            color: #001f3f;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover{
+            background-color: #ffffff;
+            transform: translateY(-2px);
+        }
+        footer{
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #add8e6;
+        }
+        </style>
+        </head>
+        <body>
+        <header>
+               <h1>WELCOME TO THE WORLD FOOD PROGRAMME</h1>
+                <img src="c:\Users\Student\Desktop\World Food Programme\images\wfp logo.jpg" style="width: 50px; height: 65px; float: left;">
+                  <nav>
+                    <div class="header--top"></div>
+                    <div class="header--misc">
+                        <div class="header--search">
+                            <input type="search" class="header--input"placeholder="search" style="float: right;">
+                        </div>
+                            <a href="home page wfp.html">HOME|</a>
+                            <a href="about us page.html">ABOUT US|</a>
+                            <a href="services page.html"> SERVICES|</a>
+                            <a href="enquiry page.html">ENQUIRY|</a>
+                            <a href="contact us page.html">CONTACT US| </a>
+                            <a href="support us.html"> SUPPORT US|</a>
+                            <a href="donate page.html">DONATE|</a>
+                    </ol>
+                    </nav>
+    
+        </header>
+        <h1 >GET IN TOUCH</h1>
+
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Details</h2>
+                <div class="info-item">
+                    <strong> Address </strong>
+                    Vaile delle Terme di Caracalla,00153 Rome, Italy
+                </div>
+                <div class="info-item">
+                    <strong>Email</strong>
+                    FAO-FAQ@fao.org</div>
+                    <div class="info-item">
+                        <strong> Phone</strong>
+                        (+39)0657057</div>
+
+                        <div class="info-item">
+                            <strong>Website</strong>
+                            fao.org</div>
+                            <div class="info-item">
+                                <strong> Food and Agriculture Organisation (FAO)
+                                    focuses on defeating hunger by helping countries
+                                     modernize and improve agriculture, forestry and fisheries practices.
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <form action="#">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name"
+                                    placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" id="email"
+                                    name="email" placeholder="email@example.com"
+                                    required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Your Message</label>
+                                    <textarea id="message" name="message"
+                                    rows="3" placeholder="How can we help you?"
+                                    required></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">
+                                    Send Message</button>
+                                </form>
+                            </div>
+        </div>
+        <img src="c:\Users\Student\Desktop\World Food Programme\images\FAO.jpg">
+        <h2><p>Since World Food Programme operates through regional bureaus
+            ,if you are looking for local assistance or information regarding operation in Southern Africa
+            the regional office is located in Johannesburg.</p>
+            <b>Address:</b>WFP Southern Africa, Johannesburg,South Africa
+            <p><b>Regional Contact:</b>For specific regional queries you can often reach out to the public 
+            information team. One of the main contacts fo this region is Michael Huggins
+            at michael.huggings@wfp.org or (+27)11517 1662
+        </p></h2>
+        <img src="c:\Users\Student\Desktop\World Food Programme\images\hunger map.jpg" style="width: 400px; height: 300px;"> 
+        <footer>&copy;ST10521296</footer>
+    
+        </body>
+</html>
